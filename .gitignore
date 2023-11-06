@@ -35,3 +35,5 @@ encryptDir.pro.user
 Makefile
 Makefile.Debug
 Makefile.Release
+*.idx
+.qtc_clangd/compile_commands.json

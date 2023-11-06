@@ -32,11 +32,9 @@ int main(int argc, char *argv[])
             file.close();
 
             QByteArray B64=raw.toBase64();
-            //qDebug() << B64;
             Cipher cipher;
             QByteArray res=cipher.encryptAES(B64,ArgsList[2],ArgsList[3]);
             B64=res.toBase64();
-            //qDebug() << B64;
             if (file.open(QIODevice::WriteOnly)){
                 QTextStream stream( &file );
                 stream << B64;
