@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
     QStringList ArgsList = a.arguments();
-    qDebug() << ArgsList;
+    //qDebug() << ArgsList;
     if (ArgsList.length()<4){
         qDebug() << "dir path or file path as first parameter !";
         qDebug() << "password as second parameter !";
