@@ -1,4 +1,5 @@
 TARGET = encryptDir
+TEMPLATE = app
 DESTROOT=$$PWD/../..
 BUILDROOT=$$DESTROOT/builds
 message(=== avatars/src/encryptDir/encryptDir.pro ===)
@@ -17,7 +18,7 @@ macx{
     ARCH = arm64
 }
 DESTROOT=$$DESTROOT/$$ARCH
-DESTDIR = $$DESTROOT/bin
+DESTDIR = $$DESTROOT
 include (../builds_paths.pri)
 
 QT = core
